@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Run Replay · routine trace viewer</title>
+<meta name="theme-color" content="#07090f">
+<meta name="description" content="Replay Grok Bot routine runs: tool calls, files, and errors on one timeline. TokenMax burn build.">
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="glow-a" aria-hidden="true"></div>
+<div class="glow-b" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 48 48" width="40" height="40">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#22d3ee"/>
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="44" height="44" rx="10" fill="#0b1220" stroke="url(#g)" stroke-width="2"/>
+        <path d="M12 30 V18 h6 l6 12 h0 l6-12 h6 V30" fill="none" stroke="url(#g)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="24" cy="34" r="2.2" fill="#fbbf24"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Run Replay</h1>
+      <p class="tag">routine traces · tools · files · errors</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span class="pill" id="dataPill">loading…</span>
+    <span class="pill clock" id="clockPill">—</span>
+  </div>
+</header>
+
+<div id="demoBanner" class="demo-banner" hidden></div>
+
+<nav class="tabs" role="tablist" aria-label="Run Replay screens">
+  <button class="tab active" data-view="runs" role="tab" aria-selected="true">Runs</button>
+  <button class="tab" data-view="replay" role="tab" aria-selected="false">Replay</button>
+  <button class="tab" data-view="about" role="tab" aria-selected="false">About</button>
+</nav>
+
+<main>
+  <!-- RUNS -->
+  <section id="view-runs" class="view active" role="tabpanel">
+    <div class="toolbar">
+      <div class="search-wrap">
+        <input id="runSearch" type="search" placeholder="Filter bot / routine…" autocomplete="off">
+      </div>
+      <div class="filters" role="group" aria-label="Status filter">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="error">Errors</button>
+        <button class="chip" data-filter="ok">Ok</button>
+        <button class="chip" data-filter="demo">Demo</button>
+      </div>
+    </div>
+    <div class="stats-row" id="statsRow"></div>
+    <div class="run-list" id="runList"></div>
+  </section>
+
+  <!-- REPLAY -->
+  <section id="view-replay" class="view" role="tabpanel">
+    <div id="replayEmpty" class="empty panel">
+      <h2>Pick a run</h2>
+      <p>Open <strong>Runs</strong> and choose a routine — or jump straight into the labeled DEMO escape-room crash.</p>
+      <button class="btn" id="openDemoBtn">Open DEMO crash</button>
+    </div>
+    <div id="replayStage" hidden>
+      <div class="replay-head panel">
+        <div class="rh-main">
+          <div class="rh-badges">
+            <span class="badge" id="rpStatus">—</span>
+            <span class="badge ghost" id="rpBot">—</span>
+            <span class="badge ghost" id="rpTrigger">—</span>
+          </div>
+          <h2 id="rpTitle">—</h2>
+          <p class="muted" id="rpMeta">—</p>
+          <p class="summary" id="rpSummary" hidden></p>
+        </div>
+        <div class="rh-counts" id="rpCounts"></div>
+      </div>
+
+      <div class="player panel">
+        <div class="player-controls">
+          <button class="btn icon" id="btnPrev" title="Previous step">‹</button>
+          <button class="btn primary icon" id="btnPlay" title="Play / pause">▶</button>
+          <button class="btn icon" id="btnNext" title="Next step">›</button>
+          <label class="speed">
+            Speed
+            <select id="playSpeed">
+              <option value="900">1×</option>
+              <option value="500" selected>2×</option>
+              <option value="250">4×</option>
+              <option value="100">8×</option>
+            </select>
+          </label>
+          <span class="step-pos" id="stepPos">0 / 0</span>
+        </div>
+        <input type="range" id="scrubber" min="0" max="0" value="0" aria-label="Timeline scrubber">
+        <div class="rail" id="rail" aria-hidden="true"></div>
+      </div>
+
+      <div class="replay-grid">
+        <div class="timeline panel" id="timeline"></div>
+        <aside class="detail panel" id="detail">
+          <p class="eyebrow">Step detail</p>
+          <h3 id="detTitle">—</h3>
+          <dl id="detDl"></dl>
+          <pre id="detDetail" hidden></pre>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="view-about" class="view" role="tabpanel">
+    <div class="about-grid">
+      <article class="panel">
+        <h2>What this is</h2>
+        <p>A local trace viewer that joins each routine run’s tool calls, files written, and errors into one timeline — so a failure (like the Oct 8 Escape Room half-finish) can be replayed step by step.</p>
+        <p>Inspired by @EvASuKa2222’s ExecWeave agent/OS execution graph in the @poteto “what did you get done this week with @bot?” thread.</p>
+      </article>
+      <article class="panel">
+        <h2>Data &amp; privacy</h2>
+        <ul class="clean">
+          <li>Read-only over <code>/home/box/agent-data</code> (<code>runs.json</code> + <code>audit.jsonl</code>)</li>
+          <li>Metadata only: bot name, routine, tool/app names, hosts, durations</li>
+          <li>No prompts, full shell commands, secrets, or message bodies</li>
+          <li>Writes stay inside <code>/workspace/tokenmax/run-replay/</code></li>
+        </ul>
+      </article>
+      <article class="panel">
+        <h2>DEMO crash</h2>
+        <p>When live metadata is sparse, the pinned <strong>Escape Room evening push — EXAMPLE crash</strong> still shows a full failure timeline. It is labeled DEMO and does <em>not</em> modify <code>escape-room/</code>. Real Escape Room work stays deferred to Thu Oct 15.</p>
+      </article>
+      <article class="panel">
+        <h2>Offline</h2>
+        <p>Single-file snapshot: <code>dist/run-replay.html</code>. Live API (when served): <code>/api/runs</code>, <code>/api/runs/&lt;id&gt;</code>, <code>/api/refresh</code>.</p>
+        <p class="muted" id="aboutStamp">—</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>TokenMax · Run Replay · port 4308</span>
+  <span id="footSrc">—</span>
+</footer>
+
+<script>
+window.__DATA__ = /*__DATA__*/ null /*__/DATA__*/;
+</script>
+<script>/*__APP__*/</script>
+</body>
+</html>

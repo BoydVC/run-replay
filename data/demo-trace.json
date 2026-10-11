@@ -1,0 +1,209 @@
+{
+  "id": "demo-escape-room-crash-oct8",
+  "demo": true,
+  "botId": "demo-tokenmax",
+  "bot": "TokenMax (DEMO)",
+  "routine": "Escape Room evening push — EXAMPLE crash",
+  "slug": "demo-escape-room-crash",
+  "trigger": "manual",
+  "status": "error",
+  "startedAt": "2026-10-08T22:41:00.000Z",
+  "finishedAt": "2026-10-08T23:18:42.000Z",
+  "startedLabel": "Wed Oct 8 · 6:41 PM ET",
+  "finishedLabel": "Wed Oct 8 · 7:18 PM ET",
+  "durationMs": 2262000,
+  "requestId": "demo-req-escape-room-oct8",
+  "counts": {
+    "events": 17,
+    "tools": 8,
+    "files": 5,
+    "errors": 5
+  },
+  "sparse": false,
+  "banner": "LABELED DEMO — fictional timeline inspired by the Oct 8 Escape Room half-finish. Does not read or modify /workspace/tokenmax/escape-room.",
+  "summary": "Build started clean, scaffolded rooms 1–3, then a headless Chrome screenshot hung, a path typo wrote into the wrong dist folder, and the final zip step aborted. Replay to see exactly where the evening push went sideways.",
+  "events": [
+    {
+      "id": "d0",
+      "ts": "2026-10-08T22:41:00.000Z",
+      "kind": "start",
+      "type": "run_start",
+      "app": "Run",
+      "label": "run started · TokenMax burn slot",
+      "status": "ok"
+    },
+    {
+      "id": "d1",
+      "ts": "2026-10-08T22:41:12.000Z",
+      "kind": "shell",
+      "type": "shell_command",
+      "app": "Shell",
+      "label": "mkdir → escape-room",
+      "status": "ok",
+      "ms": 40
+    },
+    {
+      "id": "d2",
+      "ts": "2026-10-08T22:42:05.000Z",
+      "kind": "file",
+      "type": "file_write",
+      "app": "Files",
+      "label": "web/index.html",
+      "path": "/workspace/tokenmax/escape-room/web/index.html",
+      "status": "ok",
+      "bytes": 8120
+    },
+    {
+      "id": "d3",
+      "ts": "2026-10-08T22:44:30.000Z",
+      "kind": "file",
+      "type": "file_write",
+      "app": "Files",
+      "label": "web/app.js",
+      "path": "/workspace/tokenmax/escape-room/web/app.js",
+      "status": "ok",
+      "bytes": 18440
+    },
+    {
+      "id": "d4",
+      "ts": "2026-10-08T22:48:11.000Z",
+      "kind": "shell",
+      "type": "shell_command",
+      "app": "Shell",
+      "label": "python3 → build.py",
+      "status": "ok",
+      "ms": 920
+    },
+    {
+      "id": "d5",
+      "ts": "2026-10-08T22:48:12.200Z",
+      "kind": "file",
+      "type": "file_write",
+      "app": "Files",
+      "label": "dist/escape-room.html",
+      "path": "/workspace/tokenmax/escape-room/dist/escape-room.html",
+      "status": "ok",
+      "bytes": 96200
+    },
+    {
+      "id": "d6",
+      "ts": "2026-10-08T22:51:00.000Z",
+      "kind": "shell",
+      "type": "shell_command",
+      "app": "Shell",
+      "label": "python3 → server.py :4290",
+      "status": "ok",
+      "ms": 110
+    },
+    {
+      "id": "d7",
+      "ts": "2026-10-08T22:55:40.000Z",
+      "kind": "tool",
+      "type": "mcp_tool_call",
+      "app": "Shell",
+      "label": "tests/screenshot.sh (rooms 1–2)",
+      "status": "ok",
+      "ms": 18400
+    },
+    {
+      "id": "d8",
+      "ts": "2026-10-08T22:56:02.000Z",
+      "kind": "file",
+      "type": "file_write",
+      "app": "Files",
+      "label": "screenshots/01-lobby.png",
+      "status": "ok",
+      "bytes": 412000
+    },
+    {
+      "id": "d9",
+      "ts": "2026-10-08T23:02:18.000Z",
+      "kind": "shell",
+      "type": "shell_command",
+      "app": "Shell",
+      "label": "google-chrome → #room-3",
+      "status": "ok",
+      "ms": 28000
+    },
+    {
+      "id": "d10",
+      "ts": "2026-10-08T23:08:01.000Z",
+      "kind": "error",
+      "type": "shell_command",
+      "app": "Shell",
+      "label": "google-chrome → #room-4 (hung)",
+      "status": "error",
+      "error": true,
+      "ms": 120000,
+      "detail": "Headless Chrome never painted #room-4 — virtual-time-budget exhausted. Puzzle canvas waited on a missing sprite atlas."
+    },
+    {
+      "id": "d11",
+      "ts": "2026-10-08T23:09:22.000Z",
+      "kind": "error",
+      "type": "file_write",
+      "app": "Files",
+      "label": "assets/sprites-room4.json (MISSING)",
+      "status": "error",
+      "error": true,
+      "detail": "app.js referenced /assets/sprites-room4.json but the file was never written. Room 4 froze on boot."
+    },
+    {
+      "id": "d12",
+      "ts": "2026-10-08T23:11:05.000Z",
+      "kind": "shell",
+      "type": "shell_command",
+      "app": "Shell",
+      "label": "cp → wrong dist path",
+      "status": "ok",
+      "ms": 35,
+      "detail": "Typo copied partial HTML into /workspace/tokenmax/camden-nights/dist/ by mistake (sibling project). DEMO only — no real overwrite occurred in this story."
+    },
+    {
+      "id": "d13",
+      "ts": "2026-10-08T23:12:40.000Z",
+      "kind": "file",
+      "type": "file_write",
+      "app": "Files",
+      "label": "web/rooms/room4.js (partial)",
+      "status": "ok",
+      "bytes": 2200,
+      "detail": "Half-written room module left on disk; no win condition, no exit door wiring."
+    },
+    {
+      "id": "d14",
+      "ts": "2026-10-08T23:15:10.000Z",
+      "kind": "tool",
+      "type": "mcp_tool_call",
+      "app": "Shell",
+      "label": "./run.sh --shots",
+      "status": "error",
+      "error": true,
+      "ms": 90000,
+      "detail": "Screenshot suite aborted after room-4 timeout; 00-best-home.png never produced."
+    },
+    {
+      "id": "d15",
+      "ts": "2026-10-08T23:17:55.000Z",
+      "kind": "shell",
+      "type": "shell_command",
+      "app": "Shell",
+      "label": "zip → TokenMax-escape.zip",
+      "status": "error",
+      "error": true,
+      "ms": 200,
+      "detail": "zip refused incomplete dist/ — exit 12. Evening push stopped; Escape Room deferred to Oct 15."
+    },
+    {
+      "id": "d16",
+      "ts": "2026-10-08T23:18:42.000Z",
+      "kind": "error",
+      "type": "run_end",
+      "app": "Run",
+      "label": "run error · deferred to Oct 15",
+      "status": "error",
+      "error": true,
+      "detail": "Outcome: rooms 1–3 playable, room 4 unfinished, no hero screenshot, no ship zip. Real Escape Room work is scheduled for Thu Oct 15 — this DEMO does not touch that folder."
+    }
+  ]
+}

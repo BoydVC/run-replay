@@ -431,8 +431,8 @@
       "id": "0575cc62-c637-4df7-9e6f-d731db715d26",
       "demo": false,
       "botId": "ff5dfcd2-09b9-49dd-952f-14893da73ab0",
-      "bot": "Char Tutor",
-      "routine": "Char weeknight homework check-in",
+      "bot": "Alex Tutor",
+      "routine": "Alex weeknight homework check-in",
       "slug": "char-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -692,8 +692,8 @@
       "id": "1d4678e2-11d4-4af8-aba3-ed30e8d15a50",
       "demo": false,
       "botId": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1",
-      "bot": "Vic Tutor",
-      "routine": "Vic weeknight homework check-in",
+      "bot": "Sam Tutor",
+      "routine": "Sam weeknight homework check-in",
       "slug": "vic-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -1097,7 +1097,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 3335,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -1107,7 +1107,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1883,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -1117,7 +1117,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 4904,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -1127,7 +1127,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 2315,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -1217,7 +1217,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 983,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -1237,7 +1237,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 2750,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -1257,7 +1257,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 2029,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -1317,7 +1317,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1423,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -1367,7 +1367,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 5185,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -1387,7 +1387,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1176,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -1510,7 +1510,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1012,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -1520,7 +1520,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 5382,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -1530,7 +1530,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 528,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -1540,7 +1540,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 476,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -1550,7 +1550,7 @@
           "type": "mcp_tool_call",
           "status": "error",
           "ms": 484,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread",
           "error": true
         },
@@ -1561,7 +1561,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 926,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -1571,7 +1571,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 500,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -1581,7 +1581,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 803,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -1591,7 +1591,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 458,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -1610,7 +1610,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 536,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -1620,7 +1620,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 5613,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -1630,7 +1630,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 3873,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -1640,7 +1640,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 817,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -1650,7 +1650,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 605,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -1660,7 +1660,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 469,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -2432,8 +2432,8 @@
       "id": "4b6eca31-6cb7-4aed-94bb-3b43c9a82c81",
       "demo": false,
       "botId": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1",
-      "bot": "Vic Tutor",
-      "routine": "Vic weeknight homework check-in",
+      "bot": "Sam Tutor",
+      "routine": "Sam weeknight homework check-in",
       "slug": "vic-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -2558,8 +2558,8 @@
       "id": "4c0e319c-2691-4698-b330-a1e1199d94e4",
       "demo": false,
       "botId": "ff5dfcd2-09b9-49dd-952f-14893da73ab0",
-      "bot": "Char Tutor",
-      "routine": "Char weeknight homework check-in",
+      "bot": "Alex Tutor",
+      "routine": "Alex weeknight homework check-in",
       "slug": "char-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -2723,7 +2723,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 2051,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -2733,7 +2733,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1654,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -2822,7 +2822,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1395,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -2832,7 +2832,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1435,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -2921,7 +2921,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 789,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -2951,7 +2951,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 714,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_message"
         },
         {
@@ -3011,7 +3011,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 3752,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -3507,7 +3507,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1413,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -3557,7 +3557,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1217,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -3693,7 +3693,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 4897,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -3916,7 +3916,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1217,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -3926,7 +3926,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 2181,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -3936,7 +3936,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 755,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -3946,7 +3946,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 739,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -3956,7 +3956,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 787,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -3966,7 +3966,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 752,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -3976,7 +3976,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 4405,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -4036,7 +4036,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 600,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4046,7 +4046,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 566,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4066,7 +4066,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 502,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4096,7 +4096,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 3465,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -4106,7 +4106,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 564,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4116,7 +4116,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 471,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4126,7 +4126,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1662,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4136,7 +4136,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 455,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4146,7 +4146,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 829,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -4156,7 +4156,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 611,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -4166,7 +4166,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 652,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -4176,7 +4176,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 458,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4186,7 +4186,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 439,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4196,7 +4196,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 456,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4206,7 +4206,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 505,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4216,7 +4216,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 729,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -4226,7 +4226,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 719,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -4236,7 +4236,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 523,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4246,7 +4246,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 467,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4256,7 +4256,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 465,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -4266,7 +4266,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 550,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -5376,8 +5376,8 @@
       "id": "4982b74c-3d5f-450d-b049-78cc89c6b18c",
       "demo": false,
       "botId": "ff5dfcd2-09b9-49dd-952f-14893da73ab0",
-      "bot": "Char Tutor",
-      "routine": "Char weeknight homework check-in",
+      "bot": "Alex Tutor",
+      "routine": "Alex weeknight homework check-in",
       "slug": "char-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -5448,8 +5448,8 @@
       "id": "7cc81bd9-45a1-48c7-9263-57b222af1c5f",
       "demo": false,
       "botId": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1",
-      "bot": "Vic Tutor",
-      "routine": "Vic weeknight homework check-in",
+      "bot": "Sam Tutor",
+      "routine": "Sam weeknight homework check-in",
       "slug": "vic-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -6263,8 +6263,8 @@
       "id": "c430c086-6a49-4de8-9a93-9c4c3158a2d8",
       "demo": false,
       "botId": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1",
-      "bot": "Vic Tutor",
-      "routine": "Vic weeknight homework check-in",
+      "bot": "Sam Tutor",
+      "routine": "Sam weeknight homework check-in",
       "slug": "vic-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -6344,8 +6344,8 @@
       "id": "ede6043f-01a9-45d8-87c6-583a0abe6827",
       "demo": false,
       "botId": "ff5dfcd2-09b9-49dd-952f-14893da73ab0",
-      "bot": "Char Tutor",
-      "routine": "Char weeknight homework check-in",
+      "bot": "Alex Tutor",
+      "routine": "Alex weeknight homework check-in",
       "slug": "char-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -6808,8 +6808,8 @@
       "id": "3574db19-56bc-4df1-bbe3-fffa0f64192c",
       "demo": false,
       "botId": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1",
-      "bot": "Vic Tutor",
-      "routine": "Vic weeknight homework check-in",
+      "bot": "Sam Tutor",
+      "routine": "Sam weeknight homework check-in",
       "slug": "vic-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -6880,8 +6880,8 @@
       "id": "8deac1cd-b08e-4b58-a1c7-be02ea68f93b",
       "demo": false,
       "botId": "ff5dfcd2-09b9-49dd-952f-14893da73ab0",
-      "bot": "Char Tutor",
-      "routine": "Char weeknight homework check-in",
+      "bot": "Alex Tutor",
+      "routine": "Alex weeknight homework check-in",
       "slug": "char-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -7157,7 +7157,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1776,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -7167,7 +7167,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 919,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -7177,7 +7177,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 608,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -7187,7 +7187,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 586,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -7197,7 +7197,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 612,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -7207,7 +7207,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 475,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -7262,7 +7262,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 511,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -8372,8 +8372,8 @@
       "id": "e67a6e5e-a209-48fe-804d-1479734705e8",
       "demo": false,
       "botId": "ff5dfcd2-09b9-49dd-952f-14893da73ab0",
-      "bot": "Char Tutor",
-      "routine": "Char weeknight homework check-in",
+      "bot": "Alex Tutor",
+      "routine": "Alex weeknight homework check-in",
       "slug": "char-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -8444,8 +8444,8 @@
       "id": "5f68bcb4-7237-4741-9c84-004c76877a50",
       "demo": false,
       "botId": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1",
-      "bot": "Vic Tutor",
-      "routine": "Vic weeknight homework check-in",
+      "bot": "Sam Tutor",
+      "routine": "Sam weeknight homework check-in",
       "slug": "vic-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -8892,7 +8892,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1152,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -8902,7 +8902,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 673,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -8912,7 +8912,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 540,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -8922,7 +8922,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 592,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -8932,7 +8932,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 489,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -8942,7 +8942,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 538,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -9006,7 +9006,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 561,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -9016,7 +9016,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 827,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -9026,7 +9026,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 549,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -9950,8 +9950,8 @@
       "id": "4f27db73-ba82-4447-a2ec-dd76862b1bb4",
       "demo": false,
       "botId": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1",
-      "bot": "Vic Tutor",
-      "routine": "Vic weeknight homework check-in",
+      "bot": "Sam Tutor",
+      "routine": "Sam weeknight homework check-in",
       "slug": "vic-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -10003,8 +10003,8 @@
       "id": "c25b480b-115e-4b0f-896f-f71846534f00",
       "demo": false,
       "botId": "ff5dfcd2-09b9-49dd-952f-14893da73ab0",
-      "bot": "Char Tutor",
-      "routine": "Char weeknight homework check-in",
+      "bot": "Alex Tutor",
+      "routine": "Alex weeknight homework check-in",
       "slug": "char-weeknight-homework-check-in",
       "trigger": "schedule",
       "status": "ok",
@@ -10496,7 +10496,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1513,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -10506,7 +10506,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 876,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -10536,7 +10536,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 571,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -10546,7 +10546,7 @@
           "type": "mcp_tool_call",
           "status": "error",
           "ms": 502,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread",
           "error": true
         },
@@ -10557,7 +10557,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 501,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -10567,7 +10567,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 681,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -10577,7 +10577,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1153,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -10587,7 +10587,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 804,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -10597,7 +10597,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 777,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -11528,7 +11528,7 @@
           "type": "mcp_tool_call",
           "status": "error",
           "ms": 404,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads",
           "error": true
         },
@@ -11549,7 +11549,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 5399,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -11569,7 +11569,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1444,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -11579,7 +11579,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1539,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -11589,7 +11589,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 2734,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -11599,7 +11599,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 3370,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -12350,7 +12350,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1055,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -12380,7 +12380,7 @@
           "type": "mcp_tool_call",
           "status": "error",
           "ms": 435,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads",
           "error": true
         },
@@ -12391,7 +12391,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 919,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -12401,7 +12401,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 543,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -12411,7 +12411,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 686,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -12421,7 +12421,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 872,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -12460,7 +12460,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 707,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -12470,7 +12470,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 755,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -12489,7 +12489,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 681,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -12526,7 +12526,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 585,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -13436,7 +13436,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1682,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -13850,7 +13850,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1147,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -13870,7 +13870,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1069,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -13890,7 +13890,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1138,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -13945,7 +13945,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 592,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -13955,7 +13955,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1066,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -14306,7 +14306,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 970,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -14570,7 +14570,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1129,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -14590,7 +14590,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1164,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -14619,7 +14619,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 657,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -15306,7 +15306,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 2472,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -15326,7 +15326,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 2708,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16107,7 +16107,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1336,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16117,7 +16117,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1565,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16127,7 +16127,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1717,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16146,7 +16146,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 604,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -16156,7 +16156,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 602,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -16166,7 +16166,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 494,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -16176,7 +16176,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 569,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -16186,7 +16186,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 628,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -16196,7 +16196,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 689,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -16206,7 +16206,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 931,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16216,7 +16216,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 862,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16226,7 +16226,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1169,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16236,7 +16236,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1175,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16246,7 +16246,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1115,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16256,7 +16256,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 625,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16266,7 +16266,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 778,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16276,7 +16276,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 533,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -16286,7 +16286,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 540,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -16296,7 +16296,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 650,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -16306,7 +16306,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 563,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16316,7 +16316,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 640,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16326,7 +16326,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 601,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16336,7 +16336,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 560,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "get_thread"
         },
         {
@@ -16346,7 +16346,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 852,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {
@@ -16356,7 +16356,7 @@
           "type": "mcp_tool_call",
           "status": "ok",
           "ms": 1050,
-          "app": "Gmail (Miranda)",
+          "app": "Gmail (Jordan)",
           "label": "search_threads"
         },
         {

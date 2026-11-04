@@ -23,7 +23,7 @@ SLACK_MS = 90_000  # join window pad after finishedAt
 
 SERVER_LABELS = {
     "user-Gmail": "Gmail",
-    "user-Gmail--miranda": "Gmail (Miranda)",
+    "user-Gmail--miranda": "Gmail (Jordan)",
     "user-Google-calendar": "Calendar",
     "user-Google-drive": "Drive",
     "user-Notion": "Notion",

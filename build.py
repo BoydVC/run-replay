@@ -16,7 +16,15 @@ def rd(rel):
 
 
 def main():
-    payload = collect.main()
+    # Bake the committed snapshot. collect.main() re-reads live agent-data and
+    # would put household names back on the demo page.
+    snap = os.path.join(HERE, "data", "runs.json")
+    if os.path.isfile(snap):
+        with open(snap, encoding="utf-8") as f:
+            payload = json.load(f)
+        payload = collect.scrub_obj(payload)
+    else:
+        payload = collect.main()
     data_js = json.dumps(payload, ensure_ascii=False)
     html = rd("web/index.html")
     html = html.replace("/*__CSS__*/", rd("web/app.css"))

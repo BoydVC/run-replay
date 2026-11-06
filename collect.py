@@ -21,9 +21,30 @@ MAX_RUNS = 80
 MAX_EVENTS_PER_RUN = 120
 SLACK_MS = 90_000  # join window pad after finishedAt
 
+# Whole-word, case-insensitive. Longer forms first so "Charlotte" does not
+# become "Ri" and "Victor" does not become "Jo". BoydVC, Victoria, and
+# @chrisalexboyd do not match. A fantasy-points line is left unchanged.
+_SCRUB_PATTERNS: tuple[tuple[str, str], ...] = (
+    ("charlotte", "Riley"),
+    ("miranda", "Sam"),
+    ("victor", "Jordan"),
+    ("spalding", "Northside Academy"),
+    (r"saint\s+mary(?:'s)?", "Northside Academy"),
+    (r"st\.?\s*mary(?:'s)?", "Northside Academy"),
+    ("boyd", "Alex"),
+    ("char", "Ri"),
+    ("vic", "Jo"),
+)
+_SCRUB_RE = re.compile(
+    r"(?<![\w])(" + "|".join(body for body, _ in _SCRUB_PATTERNS) + r")(?![\w])",
+    re.IGNORECASE,
+)
+_SPORTS_FP_RE = re.compile(r"\b(?:fp|fpts|fantasy\s+points?)\b", re.IGNORECASE)
+
 SERVER_LABELS = {
     "user-Gmail": "Gmail",
-    "user-Gmail--miranda": "Gmail (Jordan)",
+    # Key stays the live server id so the raw id is never echoed into a label.
+    "user-Gmail--miranda": "Gmail (Sam)",
     "user-Google-calendar": "Calendar",
     "user-Google-drive": "Drive",
     "user-Notion": "Notion",
@@ -41,6 +62,50 @@ SERVER_LABELS = {
 SAFE_PATH_RE = re.compile(
     r"(/workspace/tokenmax/[A-Za-z0-9._/-]+|/home/box/agent-data/agents/[a-f0-9-]+/(?:attachments|assets)/[A-Za-z0-9._/-]+)"
 )
+
+
+def _cased(sample, replacement):
+    letters = [ch for ch in sample if ch.isalpha()]
+    if letters and all(ch.isupper() for ch in letters):
+        return replacement.upper()
+    if letters and all(ch.islower() for ch in letters):
+        return replacement.lower()
+    if sample[:1].isupper():
+        return replacement[:1].upper() + replacement[1:]
+    return replacement
+
+
+def _synthetic(sample):
+    folded = re.sub(r"\s+", " ", sample.casefold())
+    folded = folded.replace("st. mary", "st mary").replace("st.mary", "st mary")
+    for body, synthetic in _SCRUB_PATTERNS:
+        if re.fullmatch(body, folded, re.IGNORECASE):
+            return synthetic
+    return "Riley"
+
+
+def scrub_text(text):
+    """Replace household names in one string. Sports FP lines stay as written."""
+    if not isinstance(text, str) or not text:
+        return text
+    if _SPORTS_FP_RE.search(text):
+        return text
+
+    def sub(match):
+        return _cased(match.group(0), _synthetic(match.group(0)))
+
+    return _SCRUB_RE.sub(sub, text)
+
+
+def scrub_obj(obj):
+    """Walk collector output. Keys are field names and are not rewritten."""
+    if isinstance(obj, str):
+        return scrub_text(obj)
+    if isinstance(obj, list):
+        return [scrub_obj(item) for item in obj]
+    if isinstance(obj, dict):
+        return {key: scrub_obj(value) for key, value in obj.items()}
+    return obj
 
 
 def read_json(path, default=None):
@@ -359,7 +424,7 @@ def collect_runs():
             )
 
     runs.sort(key=lambda r: r.get("startedAt") or "", reverse=True)
-    return runs[:MAX_RUNS]
+    return scrub_obj(runs[:MAX_RUNS])
 
 
 def load_demo():
@@ -369,14 +434,16 @@ def load_demo():
 
 def main():
     live = collect_runs()
-    demo = load_demo()
-    payload = {
-        "generatedAt": datetime.now(ET).isoformat(timespec="seconds"),
-        "timezone": "America/New_York",
-        "source": "agent-data automations/*/runs.json + audit.jsonl (read-only)",
-        "liveCount": len(live),
-        "runs": ([demo] if demo else []) + live,
-    }
+    demo = scrub_obj(load_demo())
+    payload = scrub_obj(
+        {
+            "generatedAt": datetime.now(ET).isoformat(timespec="seconds"),
+            "timezone": "America/New_York",
+            "source": "agent-data automations/*/runs.json + audit.jsonl (read-only)",
+            "liveCount": len(live),
+            "runs": ([demo] if demo else []) + live,
+        }
+    )
     os.makedirs(os.path.join(HERE, "data"), exist_ok=True)
     out = os.path.join(HERE, "data", "runs.json")
     with open(out, "w", encoding="utf-8") as f:

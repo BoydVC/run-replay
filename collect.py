@@ -133,7 +133,7 @@ def summarize_audit(d):
         ev["label"] = short[:56] or "mcp"
         ev["kind"] = "tool"
     elif t == "shell_command":
-        ev["app"] = "Shell" if d.get("target") != "user_machine" else "Boyd's PC"
+        ev["app"] = "Shell" if d.get("target") != "user_machine" else "Alex's PC"
         ev["label"] = sanitize_shell(d.get("command"))
         ev["kind"] = "shell"
         hints = extract_file_hints(d.get("command"))

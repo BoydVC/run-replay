@@ -1,6 +1,6 @@
 # Run Replay
 
-Trace viewer for Boyd's Grok Bot routine runs. Joins each run's tool calls, files written, and errors into one timeline so a failure can be replayed step by step.
+Trace viewer for Alex's Grok Bot routine runs. Joins each run's tool calls, files written, and errors into one timeline so a failure can be replayed step by step.
 
 TokenMax burn build (from the @poteto "what did you get done this week with @bot?" thread). Read-only over `/home/box/agent-data` — never writes outside this folder.
 
@@ -33,6 +33,6 @@ Offline single file: `dist/run-replay.html`
 
 ---
 ## Repo notes
-- **Built:** Oct 2026 (TokenMax build week; see SHORTLIST/ledger), by TokenMax (Boyd's Grok Bot) on the Grok Bot box.
+- **Built:** Oct 2026 (TokenMax build week; see SHORTLIST/ledger), by TokenMax (Alex's Grok Bot) on the Grok Bot box.
 - **Run:** `./run.sh` (then open the localhost URL it prints).
 - Imported from `/workspace/tokenmax/run-replay` on Oct 23, 2026. node_modules, virtualenvs, logs and files over 20 MB were left out.

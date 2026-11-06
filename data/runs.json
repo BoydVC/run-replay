@@ -9672,7 +9672,7 @@
           "kind": "shell",
           "type": "shell_command",
           "status": "ok",
-          "app": "Boyd's PC",
+          "app": "Alex's PC",
           "label": "powershell"
         },
         {
@@ -9691,7 +9691,7 @@
           "kind": "shell",
           "type": "shell_command",
           "status": "ok",
-          "app": "Boyd's PC",
+          "app": "Alex's PC",
           "label": "powershell"
         },
         {
@@ -14855,7 +14855,7 @@
           "kind": "shell",
           "type": "shell_command",
           "status": "ok",
-          "app": "Boyd's PC",
+          "app": "Alex's PC",
           "label": "$paths"
         },
         {
@@ -15598,7 +15598,7 @@
           "kind": "shell",
           "type": "shell_command",
           "status": "ok",
-          "app": "Boyd's PC",
+          "app": "Alex's PC",
           "label": "ls"
         },
         {
